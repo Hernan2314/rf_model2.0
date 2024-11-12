@@ -5,7 +5,7 @@ import pickle
 # Load the model and scaler
 @st.cache_resource
 def load_model_and_scaler():
-    with open('rf_model.pkl', 'rb') as model_file:
+    with open('rf_modelp.pkl', 'rb') as model_file:
         model = pickle.load(model_file)
     with open('scaler.pkl', 'rb') as scaler_file:
         scaler = pickle.load(scaler_file)
